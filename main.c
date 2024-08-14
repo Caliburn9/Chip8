@@ -93,7 +93,7 @@ int main(int argc, char **argv) {
                 }
 
                 for (int i = 0; i < 16; i++) {
-                    if (event.key.keysym.sym = keymap[i]) {
+                    if (event.key.keysym.sym == keymap[i]) {
                         setKeyPadAtI(i, 1);
                     }
                 }
@@ -101,7 +101,7 @@ int main(int argc, char **argv) {
 
             if (event.type == SDL_KEYUP) {
                 for (int i = 0; i < 16; i++) {
-                    if (event.key.keysym.sym = keymap[i]) {
+                    if (event.key.keysym.sym == keymap[i]) {
                         setKeyPadAtI(i, 0);
                     }
                 }
